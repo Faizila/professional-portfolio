@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- title -->
     <title>Faizila Amlani</title>
     <link rel="stylesheet" href="./assets/css/reset.css" />
@@ -13,7 +15,7 @@
 <body>
     <!-- header  -->
 <header class="header">
-    <h1>Faizila Amlani</h1>
+    <h1><span id="header">Faizila Amlani</span></h1>
     <!-- nav -->
     <nav class="navbar">
        <ul>
@@ -35,28 +37,69 @@
     </figure>
 <!-- section -->
     <section id="aboutme" class="aboutme">
-      <!-- <img src="./assets/images/myphoto.jpg" alt="My photo" class="float-right"/> -->
-      <h2>About Me</h2>
-      <p>
+        <h2>About Me</h2>
+      <!-- <p id=first-letter> -->
+        <p>
         I am a Software Developer.
       </p>
     </section>
     <section id="work" class="work">
-      <!-- <img src="./assets/images/myphoto.jpg" alt="My photo" class="float-right"/> -->
-      <h2>Work</h2>
-      <p>
-        Portfolio
-      </p>
+            <h2>Work</h2>
+      <div class="flex-container">
+        <div>
+          <!-- <img src="./assets/images/box.jpg" alt="Coding Image"/> -->
+        HTML
+        </div>
+        <div>
+          <!-- <img src="./assets/images/box.jpg" alt="Coding Image"/> -->
+          CSS
+        </div>
+        <div>
+          <!-- <img src="./assets/images/box.jpg" alt="Coding Image"/> -->
+          Advanced CSS
+        </div>
+        <div>
+          <!-- <img src="./assets/images/box.jpg" alt="Coding Image"/> -->
+Coming Soon!
+        </div>
+        <div>
+          <!-- <img src="./assets/images/box.jpg" alt="Coding Image"/> -->
+Coming Soon!
+        </div>
+        <div>
+          <!-- <img src="./assets/images/box.jpg" alt="Coding Image"/> -->
+Coming Soon!
+        </div>
+      </div>
     </section>
     <section id="contact" class="contact">
       <!-- <img src="./assets/images/myphoto.jpg" alt="My photo" class="float-right"/> -->
       <h2>Contact</h2>
-      <p>
-        Form
-      </p>
+      <form>
+        <p>
+          <label for="name">Name:</label>
+          <br>
+          <input class="text-input" id="name" type="text" placeholder="Full Name" />
+        </p>
+        <p>
+          <label for="email">E-mail:</label>
+          <br>
+          <input class="text-input" id="email" type="text" placeholder="me@example.com" />
+        </p>
+        <p>
+          <label for="message">Message:</label>
+          <br>
+          <textarea class="text-input" id="comment" placeholder="Hello"></textarea>
+        </p>
+        <p class="agreement">
+          <input class="checkbox" id="agreement" type="checkbox" />
+          <label>I agree to share my e-mail address.</label>
+        </p>
+        <p>
+          <button>Submit</button>
+        </p>
+      </form>
     </section>
-<!--aside -->
-<!-- <aside></aside> -->
 </main>
 <!-- footer -->
     <footer class="footer">

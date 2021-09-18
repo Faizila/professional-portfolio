@@ -1,95 +1,208 @@
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-/* header */
-.header h1 {
-  font-size: 60px;
-  color: #cadbe2;
-  padding-top: 30px;
-  padding-left: 30px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  background-color: #2a607c;
-  color: #ffffff;
-}
-
-/* list */
-.header ul {
-  list-style-type: none;
-}
-
-.header ul li {
-  display: inline-block;
-  margin-left: 25px;
-}
-
-/* nav */
-.navbar {
-  padding-bottom: 15px;
-  padding-right: 15px;
-  font-size: 25px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  background-color: #2a607c;
-  color: #ffffff;
-  text-align: right;
-}
-
-.aboutme {
-  margin-bottom: 20px;
-  padding: 50px;
-  height: 300px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-color: #16be86;
-  color: #ffffff;
-}
-
-.work {
-  margin-bottom: 20px;
-  padding: 50px;
-  height: 300px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-color: #e5ec7c;
-  color: #ffffff;
-}
-
-.contact {
-  margin-bottom: 20px;
-  padding: 50px;
-  height: 300px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-color: #49bdda;
-  color: #ffffff;
-}
-
-.aboutme h2 {
-  margin-bottom: 20px;
-  font-size: 36px;
-}
-
-  /* footer */
-.footer {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 13px;
-  text-align: center;
-}
-
-/* Cards are split into two columns at 992px or smaller */
-@media screen and (max-width: 992px) {
-  /* .card { */
-    /* width: 50%; */
-  /* } */
-  /* Change the header color */
-  header {
-    background: #314069;
+    box-sizing: border-box;
+      }
+  
+  /* header */
+  #header {
+    font-size: 60px;
+    color: #cadbe2;
+    margin-top: 30px;
+    padding-left: 50px;
+    text-align: left;
+    display: inline-block;
+    }
+  
+  .header,
+  .navbar {
+    background-color: #2a607c;
+    color: #ffffff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  /* list */
+  .header ul {
+    list-style-type: none;
+  }
+  
+  .header ul li {
+    display: inline-block;
+    margin-left: 25px;
+  }
+  
+  /* nav */
+  .navbar {
+    padding-bottom: 15px;
+    padding-right: 30px;
+    font-size: 30px;
+    text-align: right;
   }
 
-/* Cards are stacked on top of each other at 768px or smaller */
-@media screen and (max-width: 768px) {
-  /* .card { */
-    /* width: 100%; */
-  /* } */
-  /* Change the header color */
-  header {
-    background: #1fbeee;
+  a:visited {
+    color: navy;
   }
+  
+  .aboutme {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #16be86;
+    color: #ffffff;
+  }
+
+  /* #first-letter::first-letter { */
+    /* font-size: 100px; */
+    /* color: #7d5b9e; */
+  /* } */
+  
+  .work {
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    padding: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #e5ec7c;
+    color: #ffffff;
+  }
+  
+  .contact {
+    margin-bottom: 40px;
+    padding: 50px;
+    height: 480px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #49bdda;
+    color: #ffffff;
+  }
+  
+  .aboutme h2,
+  .work h2,
+  .contact h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 38px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .aboutme:hover,
+  .work:hover,
+  .contact:hover {
+    box-shadow: 0 0 15px rgb(46, 50, 112);
+    }
+  
+  /* work */
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-evenly;
+    margin-top: 70px;
+    }
+   
+    .flex-container > div {
+    background-color: #c2cee4;
+    width: 500px;
+    margin: 10px;
+    text-align: center;
+    line-height: 380px;
+    border-radius: 8px;
+    font-size: 60px;
+    }
+ 
+  /* Contact Form */
+  form {
+    max-width: 500px;
+  }
+  
+  form p {
+    margin: 4% 0;
+  }
+  
+  label {
+    display: block;
+  }
+  
+  button {
+    padding: 6px 8px;
+    color: #fff;
+    background-color: #85a6c5;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .text-input {
+    width: 50%;
+    max-width: 50%;
+  }
+  
+  .text-input, select {
+    padding: 2px;
+    outline: none;
+    border: 1.4px solid #b9C6ae;
+  }
+  
+  .text-input:hover,
+  .checkbox:hover,
+  .select:hover {
+    box-shadow: 0 0 2px rgb(43, 50, 138);
+    }
+
+  button:hover {
+  box-shadow: 0 0 4px rgb(43, 50, 138);
+    }
+   
+  .text-input:focus {
+    border-right-width: 3px;
+  }
+  
+  .text-input:placeholder-shown {
+    border-style: solid;
+  }
+  
+  .agreement {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #444f5c;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .agreement select {
+    flex: 1 0 0;
+    margin-left: 4px;
+  }
+  
+  .agreement input {
+    margin-right: 4px;
+  }
+  
+  /* When user clicks the checkbox, thank you note will be visible */
+  .checkbox:checked + label::after {
+    margin-left: 10px;
+    font-size: 14px;
+    color: #e4ebd9;
+    font-style: italic;
+    content: "(Thank You!)";
+  }
+  
+    /* footer */
+  .footer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    text-align: center;
+  }
+  
+  /* header & navbar color changes at 992px or smaller */
+  @media screen and (max-width: 992px) {
+    .header,
+    .navbar {
+      background: #ec850e;
+    }
+  }
+  
+  /* header & navbar color changes at 576px or smaller */
+  @media screen and (max-width: 576px) {
+      .header,
+      .navbar {
+        background: #146e32;
+      }
+    }
+  
