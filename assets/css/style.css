@@ -3,42 +3,49 @@
       }
   
   /* header */
-  #header {
+  header {
     font-size: 60px;
     color: #cadbe2;
-    margin-top: 30px;
-    padding-left: 50px;
-    text-align: left;
-    display: inline-block;
-    }
-  
-  .header,
-  .navbar {
     background-color: #2a607c;
+    width: 100%;
+    padding: 20px 30px;
+    text-align: center;
     color: #ffffff;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
-  
-  /* list */
-  .header ul {
-    list-style-type: none;
-  }
-  
-  .header ul li {
-    display: inline-block;
-    margin-left: 25px;
-  }
-  
   /* nav */
-  .navbar {
-    padding-bottom: 15px;
-    padding-right: 30px;
-    font-size: 30px;
-    text-align: right;
-  }
+  #nav {
+    display: flex;
+    justify-content: right;
+    padding-bottom: 10px;
+      }
 
-  a:visited {
-    color: navy;
+   button {
+      font-size: 30px;
+      font-weight: bold;
+      padding: 5px 10px;
+      margin-right: 10px;
+      background-color: #776e69;
+      color: white;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      border-radius: 6px;
+      border: solid;
+    }
+   
+    button:hover {
+    background-color: #82c8ca;
+    color: #fff;
+    font-size: 42px;
+    box-shadow: 0 0 10px rgb(80, 94, 119) inset;
+      }
+  
+    button:active {
+        box-shadow: 0 0 10px rgb(114, 107, 107) inset;
+      }
+  
+    button:focus {
+    outline: none;
+    border-color: #8ac4ff;
   }
   
   .aboutme {
@@ -95,7 +102,7 @@
     position: relative;
     justify-content: space-evenly;
     margin-top: 70px;
-    }
+        }
    
     .flex-container > div {
     background-color: #c2cee4;
@@ -120,9 +127,10 @@
     display: block;
   }
   
-  button {
-    padding: 6px 8px;
+  #submit-button {
+    padding: 2px 4px;
     color: #fff;
+    font-size: 18px;
     background-color: #85a6c5;
     border-radius: 4px;
     cursor: pointer;
@@ -143,10 +151,6 @@
   .checkbox:hover,
   .select:hover {
     box-shadow: 0 0 2px rgb(43, 50, 138);
-    }
-
-  button:hover {
-  box-shadow: 0 0 4px rgb(43, 50, 138);
     }
    
   .text-input:focus {
@@ -192,16 +196,14 @@
   
   /* header & navbar color changes at 992px or smaller */
   @media screen and (max-width: 992px) {
-    .header,
-    .navbar {
+  header {
       background: #ec850e;
     }
   }
   
   /* header & navbar color changes at 576px or smaller */
   @media screen and (max-width: 576px) {
-      .header,
-      .navbar {
+  header {
         background: #146e32;
       }
     }
