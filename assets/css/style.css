@@ -74,7 +74,7 @@
   .contact {
     margin-bottom: 40px;
     padding: 50px;
-    height: 480px;
+    height: 600px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #49bdda;
     color: #ffffff;
@@ -95,6 +95,7 @@
     }
   
   /* work */
+  
   .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -102,7 +103,7 @@
     position: relative;
     justify-content: space-evenly;
     margin-top: 70px;
-        }
+   }
    
     .flex-container > div {
     background-color: #c2cee4;
@@ -115,7 +116,55 @@
     }
  
   /* Contact Form */
-  form {
+
+  #phone,
+  #linkedin,
+  #github {
+      display: flexbox; 
+      padding: 4px 6px;
+      color: #fff;
+      font-size: 20px;
+      background-color: #85a6c5;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .tooltip {
+      position: relative;
+      display: inline-block;
+      }
+    
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 120px;
+      background-color: rgb(20, 39, 43);
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px 0;
+      position: absolute;
+      z-index: 1;
+      bottom: 150%;
+      left: 50%;
+      margin-left: -60px;
+    }
+    
+    .tooltip .tooltiptext::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: rgb(17, 68, 42) transparent transparent transparent;
+    }
+    
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+    }
+
+    form {
     max-width: 500px;
   }
   
@@ -126,7 +175,7 @@
   label {
     display: block;
   }
-  
+
   #submit-button {
     padding: 2px 4px;
     color: #fff;
@@ -186,14 +235,14 @@
     font-style: italic;
     content: "(Thank You!)";
   }
-  
+ 
     /* footer */
   .footer {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 13px;
     text-align: center;
   }
-  
+
   /* header & navbar color changes at 992px or smaller */
   @media screen and (max-width: 992px) {
   header {
