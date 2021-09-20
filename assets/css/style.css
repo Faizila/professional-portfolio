@@ -78,7 +78,7 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #49bdda;
     color: #ffffff;
-  }
+      }
   
   .aboutme h2,
   .work h2,
@@ -102,18 +102,29 @@
     flex-direction: row;
     position: relative;
     justify-content: space-evenly;
-    margin-top: 70px;
+    margin-top: 90px;
    }
    
     .flex-container > div {
     background-color: #c2cee4;
-    width: 500px;
+    width: 300px;
+    height: 300PX;
     margin: 10px;
     text-align: center;
     line-height: 380px;
     border-radius: 8px;
-    font-size: 60px;
+    font-size: 40px;
     }
+
+    .html:hover,
+    .css:hover,
+    .advanced:hover,
+    .coming-soon:hover {
+        background-color: #82c8ca;
+        color: #fff;
+        font-size: 42px;
+        box-shadow: 0 0 10px rgb(80, 94, 119) inset;
+          }
  
   /* Contact Form */
 
