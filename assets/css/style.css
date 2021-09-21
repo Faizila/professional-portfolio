@@ -49,7 +49,7 @@ button:focus {
 }
 
 .aboutme {
-  flex-wrap: inherit;
+  display: inline-table;
   margin-bottom: 20px;
   padding: 50px;
   height: 300px;
