@@ -27,7 +27,7 @@
       <button><a href="#work">My Work</a></button>
       <button><a href="#contact">Contact Me</a></button>
   </nav>
-<!-- section -->
+<!-- Main -->
     <section id="aboutme" class="aboutme">
         <h2>About Me</h2>
       <!-- <p id=first-letter> -->
@@ -35,25 +35,45 @@
         I am a Software Developer.
       </p>
     </section>
-    <section id="work" class="work">
+    <div id="work" class="work">
             <h2>Work</h2>
-   <div class="flex-container">
-<div class="html"><a href="https://faizila.github.io/New-Repo/">HTML</a></div>
-<div class="css"><a href="https://faizila.github.io/band-fan-page/">CSS</a></div>
-<div class="advanced"><a href="https://www.github.com/Faizila">Advanced CSS</a></div>
-<div class="coming-soon">Coming Soon!</div>
-  <!-- <img src="./assets/images/soon.jpg" alt="Coming Soon Image"></div> -->
-<div class="coming-soon">Coming Soon!</div>
-<div class="coming-soon">Coming Soon!</div>
-  
-          </section>
+   <section class="flex-container">
+     <!-- Card Section -->
+<div class="card">
+  <a href="https://faizila.github.io/New-Repo/">
+  <img src="./assets/images/html.png" alt="HTML Logo Image" style="width: 100%;"/></a>
+  </div>
+<div class="card">
+  <a href="https://faizila.github.io/band-fan-page/">
+    <img src="./assets/images/css.png" alt="CSS Logo Image" style="width: 70%;"/></a>
+  </div>
+<div class="card">
+  <a href="https://faizila.github.io/professional-portfolio/">
+    <img src="./assets/images/advanced.jpg" alt="Advanced HTML & CSS Logo Image" style="width: 100%;"/></a>
+  </div>
+  <div class="card">
+  <img src="./assets/images/soon.jpg" alt="Coming Soon Image" style="width: 100%;"/></a>
+  </div>
+<div class="card">
+  <img src="./assets/images/soon.jpg" alt="Coming Soon Image" style="width: 100%;"/></a>
+</div>
+<div class="card">
+  <img src="./assets/images/soon.jpg" alt="Coming Soon Image" style="width: 100%;"/></a>
+</div>
+</div >
+</section>
 
           <!-- contact -->
     <section id="contact" class="contact">
       <h2>Contact Information</h2>
+      <div class="center-box">
       <button id="phone" class="tooltip">Phone<span class="tooltiptext">847-730-7255</span></button>
       <button id="linkedin"><a href="https://www.linkedin.com/in/faizila-amlani">Linkedin</a></button>
       <button id="github"><a href="https://www.github.com/Faizila">GitHub</a></button>
+     </div>
+     <!-- <figure class="float-right">
+      <img src="./assets/images/contact.png" alt="Contact Me Logo" style="width: 100%;"/>
+     </figure> -->
       <form>
         <p>
           <label for="name">Full Name:</label>
@@ -75,15 +95,15 @@
           <label>I agree to share my e-mail address.</label>
         </p>
         <p>
-          <!-- <div action="mailto:amlani.faizila@gmail.com" method="post" enctype="text/plain"></div> -->
-          <button id="submit-button">Submit</button>
+         <button id="submit-button">Submit</button>
           
         </p>
       </form>
+    </div>
      </section>
 </main>
 <!-- footer -->
-    <footer class="footer">
+    <footer id="footer">
         <p>&copy; 2021 Faizila Amlani</p>
     </footer>
   </body>
