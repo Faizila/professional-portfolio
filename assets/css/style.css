@@ -1,288 +1,283 @@
 * {
-    box-sizing: border-box;
-      }
-  
-  /* header */
+  box-sizing: border-box;
+}
+
+/* header */
+header {
+  font-size: 60px;
+  color: #cadbe2;
+  background-color: #2a607c;
+  width: 100%;
+  padding: 20px 30px;
+  text-align: center;
+  color: #ffffff;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+/* nav */
+#nav {
+  display: flex;
+  justify-content: right;
+  padding-bottom: 10px;
+}
+
+button {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 5px 10px;
+  margin-right: 10px;
+  background-color: #776e69;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  border-radius: 6px;
+  border: solid;
+}
+
+button:hover {
+  background-color: #82c8ca;
+  color: #fff;
+  font-size: 42px;
+  box-shadow: 0 0 10px rgb(80, 94, 119) inset;
+}
+
+button:active {
+  box-shadow: 0 0 10px rgb(114, 107, 107) inset;
+}
+
+button:focus {
+  outline: none;
+  border-color: #8ac4ff;
+}
+
+.aboutme {
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #16be86;
+  color: #ffffff;
+}
+
+/* #first-letter::first-letter { */
+/* font-size: 100px; */
+/* color: #7d5b9e; */
+/* } */
+
+.aboutme h2,
+.work h2,
+.contact h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 38px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.aboutme:hover,
+.work:hover,
+.contact:hover {
+  box-shadow: 0 0 15px rgb(46, 50, 112);
+}
+
+.center-box {
+  text-align: center;
+}
+
+/* work */
+
+.work {
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  padding: 50px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #e5ec7c;
+  color: #ffffff;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-evenly;
+  margin-top: 90px;
+}
+
+.flex-container > div {
+  background-color: #c2cee4;
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  text-align: center;
+  line-height: 380px;
+  border-radius: 8px;
+  font-size: 40px;
+}
+
+.card:hover {
+  background-color: #82c8ca;
+  color: #fff;
+  font-size: 42px;
+  width: 400px;
+  height: 350px;
+  box-shadow: 0 0 10px rgb(80, 94, 119) inset;
+}
+
+.card {
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px;
+  margin: 20px;
+  flex: 0 0 300px;
+  border-radius: 8px;
+  transform: rotate(350deg);
+  box-shadow: 8px 3px 10px rgb(73, 102, 86);
+}
+
+/* Contact Form */
+
+.contact {
+  margin-bottom: 40px;
+  padding: 50px;
+  height: 550px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #49bdda;
+  color: #ffffff;
+}
+
+#phone,
+#linkedin,
+#github {
+  display: inline-flexbox;
+  padding: 4px 6px;
+  color: #fff;
+  font-size: 20px;
+  background-color: #85a6c5;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-flex;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgb(20, 39, 43);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -40px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(17, 68, 42) transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+form {
+  max-width: 500px;
+}
+
+form p {
+  margin: 4% 0;
+}
+
+label {
+  display: block;
+}
+
+#submit-button {
+  padding: 2px 4px;
+  color: #fff;
+  font-size: 18px;
+  background-color: #85a6c5;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.text-input {
+  width: 50%;
+  max-width: 50%;
+}
+
+.text-input,
+select {
+  padding: 2px;
+  outline: none;
+  border: 1.4px solid #b9c6ae;
+}
+
+.text-input:hover,
+.checkbox:hover,
+.select:hover {
+  box-shadow: 0 0 2px rgb(43, 50, 138);
+}
+
+.text-input:focus {
+  border-right-width: 3px;
+}
+
+.text-input:placeholder-shown {
+  border-style: solid;
+}
+
+.agreement {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #444f5c;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.agreement select {
+  flex: 1 0 0;
+  margin-left: 4px;
+}
+
+.agreement input {
+  margin-right: 4px;
+}
+
+/* When user clicks the checkbox, thank you note will be visible */
+.checkbox:checked + label::after {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #e4ebd9;
+  font-style: italic;
+  content: "(Thank You!)";
+}
+
+/* footer */
+#footer {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 13px;
+  text-align: center;
+}
+
+/* header & navbar color changes at 992px or smaller */
+@media screen and (max-width: 992px) {
   header {
-    font-size: 60px;
-    color: #cadbe2;
-    background-color: #2a607c;
-    width: 100%;
-    padding: 20px 30px;
-    text-align: center;
-    color: #ffffff;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: #8535ee;
   }
-  /* nav */
-  #nav {
-    display: flex;
-    justify-content: right;
-    padding-bottom: 10px;
-      }
+}
 
-   button {
-      font-size: 30px;
-      font-weight: bold;
-      padding: 5px 10px;
-      margin-right: 10px;
-      background-color: #776e69;
-      color: white;
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      border-radius: 6px;
-      border: solid;
-    }
-   
-    button:hover {
-    background-color: #82c8ca;
-    color: #fff;
-    font-size: 42px;
-    box-shadow: 0 0 10px rgb(80, 94, 119) inset;
-      }
-  
-    button:active {
-        box-shadow: 0 0 10px rgb(114, 107, 107) inset;
-      }
-  
-    button:focus {
-    outline: none;
-    border-color: #8ac4ff;
-  }
-  
-  .aboutme {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #16be86;
-    color: #ffffff;
-  }
-
-  /* #first-letter::first-letter { */
-    /* font-size: 100px; */
-    /* color: #7d5b9e; */
-  /* } */
-     
-  .aboutme h2,
-  .work h2,
-  .contact h2 {
-    margin-bottom: 20px;
-    text-align: center;
-    font-size: 38px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-  }
-  .aboutme:hover,
-  .work:hover,
-  .contact:hover {
-    box-shadow: 0 0 15px rgb(46, 50, 112);
-    }
-
-    .center-box{
-      text-align: center;
-    }
-  
-  /* work */
-
-  .work {
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-    padding: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #e5ec7c;
-    color: #ffffff;
-  }
-  
-  .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    position: relative;
-    justify-content: space-evenly;
-    margin-top: 90px;
-   }
-   
-    .flex-container > div {
-    background-color: #c2cee4;
-    width: 300px;
-    height: 300PX;
-    margin: 10px;
-    text-align: center;
-    line-height: 380px;
-    border-radius: 8px;
-    font-size: 40px;
-    }
-
-      .card:hover {
-        background-color: #82c8ca;
-        color: #fff;
-        font-size: 42px;
-        box-shadow: 0 0 10px rgb(80, 94, 119) inset;
-          }
-
-          .card {
-            border-style: solid;
-            border-width: 1px;
-            padding: 10px;
-            margin: 20px;
-            flex: 0 0 300px;
-            border-radius: 8px;
-            transform: rotate(350deg);
-            box-shadow: 8px 3px 10px rgb(73, 102, 86);
-          }
- 
-  /* Contact Form */
-
-  .contact {
-    margin-bottom: 40px;
-    padding: 50px;
-    height: 550px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #49bdda;
-    color: #ffffff;
-      }
-
-  #phone,
-  #linkedin,
-  #github {
-      display: inline-flexbox; 
-      padding: 4px 6px;
-      color: #fff;
-      font-size: 20px;
-      background-color: #85a6c5;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    .tooltip {
-      position: relative;
-      display: inline-flex;
-      }
-    
-    .tooltip .tooltiptext {
-      visibility: hidden;
-      width: 120px;
-      background-color: rgb(20, 39, 43);
-      color: #fff;
-      text-align: center;
-      border-radius: 6px;
-      padding: 5px 0;
-      position: absolute;
-      bottom: 150%;
-      left: 50%;
-      margin-left: -40px;
-    }
-    
-    .tooltip .tooltiptext::after {
-      content: "";
-      position: absolute;
-      top: 100%;
-      left: 50%;
-      margin-left: -5px;
-      border-width: 5px;
-      border-style: solid;
-      border-color: rgb(17, 68, 42) transparent transparent transparent;
-    }
-    
-    .tooltip:hover .tooltiptext {
-      visibility: visible;
-    }
-
-    /* .float-right {
-      float: right;
-      margin-top: 40px;
-      height: 400px;
-    width: 350px; 
-   } */
-
-    form {
-    max-width: 500px;
-      }
-  
-  form p {
-    margin: 4% 0;
-  }
-  
-  label {
-    display: block;
-  }
-
-  #submit-button {
-    padding: 2px 4px;
-    color: #fff;
-    font-size: 18px;
-    background-color: #85a6c5;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .text-input {
-    width: 50%;
-    max-width: 50%;
-  }
-  
-  .text-input, select {
-    padding: 2px;
-    outline: none;
-    border: 1.4px solid #b9C6ae;
-  }
-  
-  .text-input:hover,
-  .checkbox:hover,
-  .select:hover {
-    box-shadow: 0 0 2px rgb(43, 50, 138);
-    }
-   
-  .text-input:focus {
-    border-right-width: 3px;
-  }
-  
-  .text-input:placeholder-shown {
-    border-style: solid;
-  }
-  
-  .agreement {
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    color: #444f5c;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .agreement select {
-    flex: 1 0 0;
-    margin-left: 4px;
-  }
-  
-  .agreement input {
-    margin-right: 4px;
-  }
-  
-  /* When user clicks the checkbox, thank you note will be visible */
-  .checkbox:checked + label::after {
-    margin-left: 10px;
-    font-size: 14px;
-    color: #e4ebd9;
-    font-style: italic;
-    content: "(Thank You!)";
-  }
- 
-    /* footer */
-  #footer {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 13px;
-    text-align: center;
-  }
-
-  /* header & navbar color changes at 992px or smaller */
-  @media screen and (max-width: 992px) {
+/* header & navbar color changes at 576px or smaller */
+@media screen and (max-width: 576px) {
   header {
-      background: #8535ee;
-    }
+    background: #f1e149;
   }
-  
-  /* header & navbar color changes at 576px or smaller */
-  @media screen and (max-width: 576px) {
-  header {
-        background: #f1e149;
-      }
-    }
-  
+}
