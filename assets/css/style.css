@@ -143,7 +143,7 @@
   #phone,
   #linkedin,
   #github {
-      display: flexbox; 
+      display: inline-flexbox; 
       padding: 4px 6px;
       color: #fff;
       font-size: 20px;
